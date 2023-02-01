@@ -1,13 +1,4 @@
----
-marp: true
-pagination: true
-inlineSVG: true
-draft: true
-class:
-- lead
-- invert
-size: 16:9
----
+## Resolução
 
 1- Pegar o Lobo
 2- Colocar o lobo dentro do barco
@@ -24,9 +15,6 @@ size: 16:9
 13- Guardar o Remo
 14- Sair do barco
 15- Pegar o maço de alfafa
-
----
-
 16- Colocar o março de alfafa dentro do barco
 17- Entrar dentro do barco
 18- Pegar o Remo
@@ -41,9 +29,6 @@ size: 16:9
 27- Guardar o remo
 28- Sair do barco
 29- Pegar a cabra
-
----
-
 30- Colocar a cabra dentro do barco
 31- Entrar dentro do barco
 32- Pegar o remo
