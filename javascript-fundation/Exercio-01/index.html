@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista - Exercícios</title>
+    <style>
+        input, button {
+            display: inline-block;
+            margin: 10px;
+            align-items: inherit;
+        }
+        .container-body{
+        text-align: center;
+        position: relative;
+        top: 0;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    .content-table{
+        border-collapse: collapse;
+        /* margin: 25px 0; */
+        font-size: 0.9em;
+        min-width: 200px;
+        border-radius: 5px 5px 0 0;
+        overflow: hidden;
+        box-shadow: 0 0 20px rgba(0,0,0, 0.15);
+        
+    }
+
+    button {
+        width: 200px;
+        text-decoration: none;
+        font-size: 20px;
+        background: linear-gradient(101deg, hsl(228, 66%, 53%), hsl(228, 66%, 47%));
+        color: #fff;
+         padding: 10px 26px;
+         border-radius: .5rem;
+         box-shadow: 0 4px 8px hsl(228deg 66% 45% / 25%);
+         transition: .3s;
+         cursor: pointer;
+    }
+    </style>
+</head>
+<body class="container-body">
+    <h2>Digite 3 números para calcular a média:</h2>
+    <div class="content-table">
+        <input type="number" id="a">
+        <input type="number" id="b">
+        <input type="number" id="c">
+    </div>
+
+    <button onclick="obterMedia()">Calcular média</button>
+    <div id="resultado"></div>
+    <script src="./script.js"></script>
+</body>
+</html>
