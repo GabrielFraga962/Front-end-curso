@@ -40,7 +40,10 @@
         <!-- menu -->
         <ul class="menu">
             <li><a href="#">Home</a></li>
-            <li><a href="#">Masculino</a></li>
+            <li><a href="#">Masculino</a>
+              <!-- sale-lable -->
+              <span class="sale-lable">Oferta</span>
+            </li>
             <li><a href="#">Feminino</a></li>
             <li><a href="#">Infántil</a></li>
             <li><a href="#">Shop</a></li>
@@ -48,7 +51,7 @@
         <!-- right-menu -->
         <div class="right-menu">
             <!-- search -->
-            <a href="#">
+            <a href="#" class="search">
                 <i class="fas fa-search"></i>
             </a>
             <!-- user -->
@@ -57,10 +60,60 @@
             </a>
             <!-- cart-icon -->
             <a href="#">
-                <i class="fas fa-shopping-cart"></i>
+                <i class="fas fa-shopping-cart">
+                <!-- number-of-product-in-cart -->
+                <span class="num-cart-product">0</span>
+              </i>
             </a>
         </div>
       </div>
     </nav>
+    <!-- search-bar -->
+    <div class="search-bar">
+      <!-- search-input -->
+      <div class="search-input">
+        <!-- input -->
+        <input type="text" placeholder="Pesquisar por produto">
+        <!-- cancel-btn -->
+        <a href="#" class="search-cancel">
+          <i class="fas fa-times"></i>
+        </a>
+      </div>
+    </div>
+
+    <!-- login-and-sing-up-form -->
+    <div class="form">
+      <!-- login -->
+      <div class="login-form">
+        <!-- heading -->
+        <strong>Log In</strong>
+        <!-- inputs -->
+        <form >
+            <input type="email" placeholder="Example@email.com" name="email">
+            <input type="password" placeholder="Sua senha" name="password">
+            <!-- submit-btn -->
+            <input type="submit" value="Log In">
+        </form>
+      </div>
+    </div>
+
+
+
+
+
+
+    <!-- jQuery -->
+    <script src="./js/jQuery.js"></script>
+    <!-- script -->
+    <script type="text/javascript">
+      // Fot Search bar
+      $(document).on('click','.search', function(){
+        $('.search-bar').addClass('search-bar-active')
+      });
+
+      $(document).on('click','.search-cancel', function(){
+        $('.search-bar').removeClass('search-bar-active')
+      });
+    </script>
   </body>
 </html>
