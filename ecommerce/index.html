@@ -6,7 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>VarejoInteligente</title>
     <!-- StyleSheet -->
-    <link rel="stylesheet" type="text/css" href="./slyle.css" />
+    <link rel="stylesheet" type="text/css" href="./css/slyle.css" />
+    <!-- light-slider-css -->
+    <link rel="stylesheet" type="text/css" href="./css/lightslider.css" />
+     <!-- jQuery -->
+     <script src="./js/jQuery.js"></script>
+      <!-- script -->
+    <script src="./js/Script.js"></script>
+    <!-- ligth-slider-js -->
+    <script src="./js/lightslider.js"></script>
     <!-- fav-icon -->
     <link rel="shortcut icon" href="./images/fav-icon.png" />
     <!-- using-FontAwesome-For-Icons -->
@@ -55,7 +63,7 @@
                 <i class="fas fa-search"></i>
             </a>
             <!-- user -->
-            <a href="#">
+            <a href="#" class="user">
                 <i class="far fa-user"></i>
             </a>
             <!-- cart-icon -->
@@ -80,40 +88,98 @@
         </a>
       </div>
     </div>
-
     <!-- login-and-sing-up-form -->
     <div class="form">
       <!-- login -->
       <div class="login-form">
+        <!-- cancel-btn -->
+        <a href="#" class="form-cancel">
+          <i class="fas fa-times"></i>
+        </a>
         <!-- heading -->
         <strong>Log In</strong>
         <!-- inputs -->
         <form >
-            <input type="email" placeholder="Example@email.com" name="email">
-            <input type="password" placeholder="Sua senha" name="password">
+            <input type="email" placeholder="Example@email.com" name="email" required>
+            <input type="password" placeholder="Sua senha" name="password" required>
             <!-- submit-btn -->
-            <input type="submit" value="Log In">
+            <input type="submit" id="ativo" value="Log In">
         </form>
+        <!-- forget-and-sign-up-btn -->
+        <div class="form-btns">
+          <a href="#" class="forget">Esqueceu Sua Senha?</a>
+          <a href="#" class="sign-up-btn">Criar Uma Conta</a>
+        </div>
       </div>
+
+      <!-- sign-up -->
+      <div class="sign-up-form">
+        <!-- cancel-btn -->
+        <a href="#" class="form-cancel">
+          <i class="fas fa-times"></i>
+        </a>
+        <!-- heading -->
+        <strong>Sign Up</strong>
+        <!-- inputs -->
+        <form >
+            <input type="text" placeholder="Nome Completo" name="fullname" required>
+            <input type="email" placeholder="Example@email.com" name="email" required>
+            <input type="password" placeholder="Sua senha" name="password" required>
+            <!-- submit-btn -->
+            <input type="submit" id="ativo" value="Sign up">
+        </form>
+        <!-- forget-and-sign-up-btn -->
+        <div class="form-btns">
+          <a href="#" class="already-acount">Já Tem Uma Conta?</a>
+          
+        </div>
+      </div>
+
     </div>
-
-
-
-
-
-
-    <!-- jQuery -->
-    <script src="./js/jQuery.js"></script>
-    <!-- script -->
-    <script type="text/javascript">
-      // Fot Search bar
-      $(document).on('click','.search', function(){
-        $('.search-bar').addClass('search-bar-active')
-      });
-
-      $(document).on('click','.search-cancel', function(){
-        $('.search-bar').removeClass('search-bar-active')
-      });
-    </script>
+    <!-- Full-Slider -->
+    <ul id="adaptive" class="cs-hidden">
+      <!-- box-01 -->
+      <li class="item-a">
+        <!-- box -->
+        <div class="full-slider-box f-slide-1">
+          <!-- slider-text-container -->
+          <div class="slider-text-container">
+            <div class="f-slider-text">
+              <span>Oferta Limitada</span>
+              <strong>30% de desconto<br/> com <font>código promocional</font></strong>
+              <a href="#" class="f-slider-btn">Compre Agora</a>
+            </div>
+          </div>
+        </div>
+      </li>
+      <!-- box-02 -->
+      <li class="item-a">
+        <!-- box -->
+        <div class="full-slider-box f-slide-2">
+          <!-- slider-text-container -->
+          <div class="slider-text-container">
+            <div class="f-slider-text">
+              <span>Oferta Limitada</span>
+              <strong>30% de desconto<br/> com <font>código promocional</font></strong>
+              <a href="#" class="f-slider-btn">Compre Agora</a>
+            </div>
+          </div>
+        </div>
+      </li>
+      <!-- box-03 -->
+      <li class="item-a">
+        <!-- box -->
+        <div class="full-slider-box f-slide-3">
+          <!-- slider-text-container -->
+          <div class="slider-text-container">
+            <div class="f-slider-text">
+              <span>Oferta Limitada</span>
+              <strong>30% de desconto<br/> com <font>código promocional</font></strong>
+              <a href="#" class="f-slider-btn">Compre Agora</a>
+            </div>
+          </div>
+        </div>
+      </li>
+    </ul>
   </body>
 </html>
