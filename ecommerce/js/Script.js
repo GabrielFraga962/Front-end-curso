@@ -31,3 +31,14 @@ $(document).on('click','.search', function(){
         loop: true,
     });
 });
+
+// Feature-slider
+$(document).ready(function() {
+  $('#autoWidth').lightSlider({
+      autoWidth:true,
+      loop:true,
+      onSliderLoad: function() {
+          $('#autoWidth').removeClass('cS-hidden');
+      } 
+  });  
+});
